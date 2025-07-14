@@ -213,9 +213,17 @@ yarn.lock
 # npm
 package-lock.json
 
-# Webpack
-/dist/
-/build/
+# Webpack (specific to build outputs)
+dist/
+build/
+
+# Next.js (if adding Next.js frontend)
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
 
 # Logs
 logs
@@ -245,23 +253,8 @@ temp/
 *.back
 *.orig
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
 # Redis
 dump.rdb
-
-# PostgreSQL
-*.sql
-
-# MySQL
-*.sql
 
 # Local configuration files
 local_settings.py
@@ -303,18 +296,6 @@ Procfile
 
 # Vercel
 .vercel/
-
-# Next.js (if adding Next.js frontend)
-.next/
-out/
-
-# Nuxt.js
-.nuxt/
-dist/
-
-# Gatsby
-.cache/
-public/
 
 # Storybook
 .storybook/
@@ -363,56 +344,3 @@ service-account-key.json
 config.ini
 config.cfg
 settings.ini
-
-# IDE specific files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-.atom/
-.brackets.json
-
-# OS specific files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-Desktop.ini
-$RECYCLE_BIN/
-
-# Python specific
-*.pyc
-__pycache__/
-*.pyo
-*.pyd
-.Python
-*.egg-info/
-dist/
-build/
-.tox/
-.coverage
-.pytest_cache/
-.mypy_cache/
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-.env/
-
-# Django specific
-*.log
-db.sqlite3
-db.sqlite3-journal
-/media/
-/static/
-/staticfiles/
-local_settings.py
-.env
-
-# DRF specific
-*.log
